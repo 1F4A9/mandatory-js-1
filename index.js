@@ -2,12 +2,9 @@
 document.querySelector('h1').textContent = 'Fruits & Vegetables Corp';
 
 // CHANGING APPEARANCE ON LI ELEMENT
-const childNodeOfLi = document.querySelector('ul').lastElementChild.childNodes;
-
-for (let nodes of childNodeOfLi) {
-    nodes.textContent = ('Vegetables');
-    nodes.href = ('#vegetables');
-};
+const liElement = document.querySelector('ul > li:last-child > a');
+liElement.textContent = 'Vegetables'
+liElement.href = '#vegetables';
 
 // SWAPPING SECTION TAGS
 const main = document.getElementById('main');
