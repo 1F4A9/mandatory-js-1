@@ -44,4 +44,4 @@ addStylesheet.href = 'main.css';
 document.querySelector('head').appendChild(addStylesheet);
 
 // CHANGING APPEARANCE IN HEAD TITLE
-document.querySelector('title').textContent = 'Fruits & Vegetables Corp';
+document.title = 'Fruits & Vegetables Corp';
