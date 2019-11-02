@@ -12,6 +12,11 @@ const about = document.getElementById('about');
 
 main.insertAdjacentElement('afterbegin', about);
 
+// WRAPPING TEXT IN A P-TAG
+about.innerHTML = '';
+const pElement = document.createElement('P');
+about.appendChild(pElement).textContent = `We're the best in fruits & vegetables`;
+
 // CREATE NEW H2 ELEMENTS
 const contact = document.getElementById('contact');
 
@@ -22,11 +27,6 @@ elementContact.innerHTML = 'Contact';
 
 about.insertAdjacentElement("afterbegin", elementAbout);
 contact.insertAdjacentElement("afterbegin", elementContact);
-
-// WRAPPING TEXT IN A P-TAG
-const pElement = document.createElement('p');
-about.appendChild(pElement);
-pElement.appendChild(about.childNodes[1]);
 
 // CHANGE TD ELEMENTS TO TH INSIDE THEAD
 const tdElement = document.querySelectorAll('thead > tr > td');
